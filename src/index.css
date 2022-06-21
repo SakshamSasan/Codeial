@@ -5,9 +5,107 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(240,240,240);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.app-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d6d6d6;
+  border-radius: 50%;
+  border-top-color: #6200ee;
+  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  margin-right: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.bgImage {
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.postIcon {
+  width:80%;
+  border-radius: 50%;
+  height:0;
+  padding-bottom: 80%;
+  background-color: grey;
+}
+.icon {
+  transform:scale(1.1)
+}
+.inputContainer {
+  width:80%
+}
+input {
+  /* background-color: rgba(211,211,211,0.8); */
+  border:none
+}
+.commentIcon {
+  width:50%;
+  border-radius: 50%;
+  height:0;
+  padding-bottom: 50%;
+  transform: scale(1);
+}
+.navbarIcon {
+  color:white !important;
+  border:none !important;
+  cursor:pointer;
+}
+
+@media (max-width:490px) {
+  .commentIcon{
+    transform: scale(2.5);
+  }
+  .postIcon{
+    transform: scale(1.8);
+  }
+}
+
+.custompos {
+  display:flex;
+
+}
+@media (min-width:992px) {
+  .custompos {
+    justify-content: end;
+  }
+}
+
+.createpostarea{
+  height:15vh;
+  border:none;
+}
+@media (max-width:768px) and (orientation:landscape) {
+  .createpostarea{
+    height:30vh;
+  }
+}
+.resultIcon {
+  width:70%;
+  height:0;
+  padding-bottom: 70%;
+  border-radius: 50%;
+  background-image: url(https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
