@@ -26,7 +26,7 @@ function UserProfile() {
                 addToast(response.message,{
                     appearance:'error'
                 })
-                return <Navigate to="/home"/>
+                return <Navigate to="/Codeial"/>
 
             }
         }

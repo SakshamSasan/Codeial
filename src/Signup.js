@@ -31,7 +31,7 @@ function Signup() {
         }
         var response = await auth.signup(userName,email,password,confirmPassword)
         if(response.success) {
-            navigate('/login')
+            navigate('/Codeial/login')
             return addToast('User created successfully. Now Log In',{
                 appearance:'success'
             })

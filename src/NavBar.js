@@ -16,10 +16,10 @@ function NavBar() {
         e.preventDefault()
         var response = await searchUsers(text)
             if(response.success) {
-                navigate('/results',{state:{users:response.data.users}})
+                navigate('/Codeial/results',{state:{users:response.data.users}})
             }
             else {
-                navigate('/results',{state:{users:-1}})
+                navigate('/Codeial/results',{state:{users:-1}})
             }
         
     }
